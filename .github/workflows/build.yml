@@ -20,7 +20,7 @@ jobs:
 
       - name: Compile with Nuitka
         run: |
-          python -m nuitka --standalone --onefile --output-filename=app.exe --include-data-dir=./info=info main.py
+          python -m nuitka --standalone --onefile --assume-yes-for-downloads --output-filename=app.exe --include-data-dir=./info=info main.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
