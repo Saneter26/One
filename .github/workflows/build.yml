@@ -1,0 +1,29 @@
+name: Build Windows EXE
+on: push  # Запуск при каждом push в репозиторий
+
+jobs:
+  build:
+    runs-on: windows-latest  # Windows-сервер для сборки .exe
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install nuitka  # Если не указан в requirements.txt
+
+      - name: Compile with Nuitka
+        run: |
+          python -m nuitka --standalone --onefile --output-filename=app.exe --include-data-dir=./info=info main.py
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: app.exe
+          path: app.exe
