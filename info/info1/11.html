@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Билет №11 - Решение</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .answer {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .printer-types {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .printer-type {
+            background-color: #e8f4f8;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .email-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .feature {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .table-container {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .sort-instruction {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Экзаменационный билет №11</h1>
+    <p><strong>Специальность:</strong> 09.02.07 Информационные системы и программирование</p>
+    <p><strong>Курс:</strong> 1</p>
+    <p><strong>Дисциплина:</strong> Информатика</p>
+
+    <h2>1. Назначение, типы и принцип работы принтеров и плоттеров</h2>
+    <div class="answer">
+        <h3>Принтеры - устройства для вывода информации на бумагу:</h3>
+        <div class="printer-types">
+            <div class="printer-type">
+                <h4>1. Матричные принтеры</h4>
+                <ul>
+                    <li><strong>Принцип работы:</strong> Удар иголок через красящую ленту</li>
+                    <li><strong>Преимущества:</strong>
+                        <ul>
+                            <li>Низкая стоимость отпечатка</li>
+                            <li>Печать на многослойных бланках</li>
+                            <li>Надежность</li>
+                        </ul>
+                    </li>
+                    <li><strong>Недостатки:</strong>
+                        <ul>
+                            <li>Низкая скорость</li>
+                            <li>Шум</li>
+                            <li>Ограниченное качество</li>
+                        </ul>
+                    </li>
+                    <li><strong>Применение:</strong> Кассовые чеки, банковские документы</li>
+                </ul>
+            </div>
+            <div class="printer-type">
+                <h4>2. Струйные принтеры</h4>
+                <ul>
+                    <li><strong>Принцип работы:</strong> Выброс капель чернил через дюзы</li>
+                    <li><strong>Преимущества:</strong>
+                        <ul>
+                            <li>Высокое качество цветной печати</li>
+                            <li>Тихая работа</li>
+                            <li>Низкая стоимость устройства</li>
+                        </ul>
+                    </li>
+                    <li><strong>Недостатки:</strong>
+                        <ul>
+                            <li>Высокая стоимость расходников</li>
+                            <li>Чернила могут выцветать</li>
+                        </ul>
+                    </li>
+                    <li><strong>Применение:</strong> Фотопечать, домашнее использование</li>
+                </ul>
+            </div>
+            <div class="printer-type">
+                <h4>3. Лазерные принтеры</h4>
+                <ul>
+                    <li><strong>Принцип работы:</strong>
+                        <ol>
+                            <li>Лазер формирует электростатическое изображение на барабане</li>
+                            <li>Тонер прилипает к заряженным участкам</li>
+                            <li>Тонер переносится на бумагу и запекается</li>
+                        </ol>
+                    </li>
+                    <li><strong>Преимущества:</strong>
+                        <ul>
+                            <li>Высокая скорость</li>
+                            <li>Низкая стоимость отпечатка</li>
+                            <li>Долговечность отпечатков</li>
+                        </ul>
+                    </li>
+                    <li><strong>Применение:</strong> Офисная печать, массовая печать документов</li>
+                </ul>
+            </div>
+            <div class="printer-type">
+                <h4>4. Термопринтеры</h4>
+                <ul>
+                    <li><strong>Принцип работы:</strong> Нагрев термобумаги</li>
+                    <li><strong>Преимущества:</strong>
+                        <ul>
+                            <li>Простота конструкции</li>
+                            <li>Тихая работа</li>
+                            <li>Компактность</li>
+                        </ul>
+                    </li>
+                    <li><strong>Недостатки:</strong>
+                        <ul>
+                            <li>Одноцветная печать</li>
+                            <li>Выцветание со временем</li>
+                        </ul>
+                    </li>
+                    <li><strong>Применение:</strong> Кассовые аппараты, факсы</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Плоттеры - устройства для широкоформатной печати:</h3>
+        <ul>
+            <li><strong>Перьевые:</strong> Рисуют перьями с чернилами (для чертежей)</li>
+            <li><strong>Струйные:</strong> Аналогичны струйным принтерам, но для больших форматов</li>
+            <li><strong>Режущие:</strong> Вырезают изображения из пленки (для рекламы)</li>
+            <li><strong>Применение:</strong> Архитектурные чертежи, рекламные баннеры, карты</li>
+        </ul>
+
+        <h3>Основные характеристики печатающих устройств:</h3>
+        <table>
+            <tr>
+                <th>Характеристика</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>Разрешение</td>
+                <td>Количество точек на дюйм (dpi), например 600×600 dpi</td>
+            </tr>
+            <tr>
+                <td>Скорость печати</td>
+                <td>Страниц в минуту (ppm), например 20 ppm</td>
+            </tr>
+            <tr>
+                <td>Формат бумаги</td>
+                <td>A4, A3, A0 (для плоттеров)</td>
+            </tr>
+            <tr>
+                <td>Ресурс картриджа</td>
+                <td>Количество страниц, например 2000 страниц</td>
+            </tr>
+            <tr>
+                <td>Интерфейсы</td>
+                <td>USB, Ethernet, Wi-Fi, Bluetooth</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2>2. Электронная почта и телеконференции: понятие, назначение, способы использования</h2>
+    <div class="answer">
+        <h3>Электронная почта (email):</h3>
+        <div class="email-features">
+            <div class="feature">
+                <h4>Понятие:</h4>
+                <p>Технология передачи электронных сообщений через компьютерные сети.</p>
+                <p>Формат адреса: <strong>имя@домен.зона</strong> (пример: user@example.com)</p>
+            </div>
+            <div class="feature">
+                <h4>Назначение:</h4>
+                <ul>
+                    <li>Личная и деловая переписка</li>
+                    <li>Рассылка уведомлений</li>
+                    <li>Передача файлов</li>
+                    <li>Регистрация на сайтах</li>
+                </ul>
+            </div>
+            <div class="feature">
+                <h4>Компоненты системы:</h4>
+                <ul>
+                    <li><strong>MUA</strong> (Mail User Agent) - клиент (Outlook, Thunderbird)</li>
+                    <li><strong>MTA</strong> (Mail Transfer Agent) - сервер отправки (SMTP)</li>
+                    <li><strong>MDA</strong> (Mail Delivery Agent) - сервер получения (POP3/IMAP)</li>
+                </ul>
+            </div>
+            <div class="feature">
+                <h4>Протоколы:</h4>
+                <ul>
+                    <li><strong>SMTP</strong> (25 порт) - отправка почты</li>
+                    <li><strong>POP3</strong> (110 порт) - загрузка почты на устройство</li>
+                    <li><strong>IMAP</strong> (143 порт) - работа с почтой на сервере</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Телеконференции:</h3>
+        <div class="email-features">
+            <div class="feature">
+                <h4>Понятие:</h4>
+                <p>Технология коллективного общения в реальном времени через компьютерные сети.</p>
+            </div>
+            <div class="feature">
+                <h4>Назначение:</h4>
+                <ul>
+                    <li>Проведение совещаний</li>
+                    <li>Дистанционное обучение</li>
+                    <li>Техподдержка</li>
+                    <li>Виртуальные встречи</li>
+                </ul>
+            </div>
+            <div class="feature">
+                <h4>Типы телеконференций:</h4>
+                <ul>
+                    <li><strong>Аудиоконференции</strong> - только голос</li>
+                    <li><strong>Видеоконференции</strong> - видео и звук</li>
+                    <li><strong>Веб-конференции</strong> - с демонстрацией экрана</li>
+                    <li><strong>Текст-чаты</strong> - письменное общение</li>
+                </ul>
+            </div>
+            <div class="feature">
+                <h4>Популярные платформы:</h4>
+                <ul>
+                    <li>Zoom</li>
+                    <li>Microsoft Teams</li>
+                    <li>Google Meet</li>
+                    <li>Skype</li>
+                    <li>WebEx</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Сравнение email и телеконференций:</h3>
+        <table>
+            <tr>
+                <th>Характеристика</th>
+                <th>Электронная почта</th>
+                <th>Телеконференции</th>
+            </tr>
+            <tr>
+                <td>Скорость общения</td>
+                <td>Асинхронная (с задержкой)</td>
+                <td>Синхронная (в реальном времени)</td>
+            </tr>
+            <tr>
+                <td>Форма общения</td>
+                <td>Текст, вложения</td>
+                <td>Голос, видео, текст, демонстрация экрана</td>
+            </tr>
+            <tr>
+                <td>Количество участников</td>
+                <td>Ограничено разумными пределами</td>
+                <td>До сотен и тысяч (для вебинаров)</td>
+            </tr>
+            <tr>
+                <td>Запись</td>
+                <td>Автоматически сохраняется</td>
+                <td>Требует специальной записи</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2>3. Создайте электронную таблицу в соответствии с образцом</h2>
+    <div class="answer">
+        <h3>Исходная таблица:</h3>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                    <th>Класс</th>
+                    <th>Месяц рождения</th>
+                    <th>Год рождения</th>
+                </tr>
+                <tr>
+                    <td>Иванова</td>
+                    <td>Наталия</td>
+                    <td>7</td>
+                    <td>09</td>
+                    <td>1996</td>
+                </tr>
+                <tr>
+                    <td>Степанов</td>
+                    <td>Юрий</td>
+                    <td>5</td>
+                    <td>01</td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <td>Селезнева</td>
+                    <td>Мария</td>
+                    <td>6</td>
+                    <td>05</td>
+                    <td>1999</td>
+                </tr>
+                <tr>
+                    <td>Иванова</td>
+                    <td>Александра</td>
+                    <td>8</td>
+                    <td>06</td>
+                    <td>1995</td>
+                </tr>
+            </table>
+        </div>
+
+        <h3>Действия с таблицей:</h3>
+        <div class="sort-instruction">
+            <h4>1. Сортировка по фамилиям (по возрастанию):</h4>
+            <ol>
+                <li>Выделить диапазон данных (A2:E5)</li>
+                <li>Выбрать "Данные" → "Сортировка"</li>
+                <li>Установить сортировку по столбцу "Фамилия"</li>
+                <li>Порядок: "А→Я"</li>
+            </ol>
+        </div>
+
+        <h4>Результат после сортировки:</h4>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                    <th>Класс</th>
+                    <th>Месяц рождения</th>
+                    <th>Год рождения</th>
+                </tr>
+                <tr>
+                    <td>Иванова</td>
+                    <td>Александра</td>
+                    <td>8</td>
+                    <td>06</td>
+                    <td>1995</td>
+                </tr>
+                <tr>
+                    <td>Иванова</td>
+                    <td>Наталия</td>
+                    <td>7</td>
+                    <td>09</td>
+                    <td>1996</td>
+                </tr>
+                <tr>
+                    <td>Селезнева</td>
+                    <td>Мария</td>
+                    <td>6</td>
+                    <td>05</td>
+                    <td>1999</td>
+                </tr>
+                <tr>
+                    <td>Степанов</td>
+                    <td>Юрий</td>
+                    <td>5</td>
+                    <td>01</td>
+                    <td>2000</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="sort-instruction">
+            <h4>2. Добавление новых учащихся:</h4>
+            <ol>
+                <li>Скопировать таблицу на новый лист</li>
+                <li>Добавить строки для новых учащихся:
+                    <ul>
+                        <li>Селиверстов Игорь, 7 класс, январь 1997</li>
+                        <li>Елисеева Ольга, 5 класс, декабрь 1999</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <h4>3. Сортировка по году рождения (по убыванию):</h4>
+        <div class="sort-instruction">
+            <ol>
+                <li>Скопировать таблицу на новый лист</li>
+                <li>Выделить диапазон данных с новыми учащимися</li>
+                <li>Сортировка по столбцу "Год рождения"</li>
+                <li>Порядок: "Я→А" (от новых к старым)</li>
+            </ol>
+        </div>
+
+        <h4>4. Сортировка по месяцу рождения (по возрастанию):</h4>
+        <div class="sort-instruction">
+            <ol>
+                <li>Скопировать таблицу на новый лист</li>
+                <li>Сортировка по столбцу "Месяц рождения"</li>
+                <li>Порядок: "А→Я"</li>
+            </ol>
+        </div>
+
+        <h4>5. Сортировка по классу (по убыванию):</h4>
+        <div class="sort-instruction">
+            <ol>
+                <li>Скопировать таблицу на новый лист</li>
+                <li>Сортировка по столбцу "Класс"</li>
+                <li>Порядок: "Я→А" (от старших к младшим)</li>
+            </ol>
+        </div>
+
+        <h3>Финальная таблица после всех сортировок:</h3>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                    <th>Класс</th>
+                    <th>Месяц рождения</th>
+                    <th>Год рождения</th>
+                </tr>
+                <tr>
+                    <td>Иванова</td>
+                    <td>Александра</td>
+                    <td>8</td>
+                    <td>06</td>
+                    <td>1995</td>
+                </tr>
+                <tr>
+                    <td>Иванова</td>
+                    <td>Наталия</td>
+                    <td>7</td>
+                    <td>09</td>
+                    <td>1996</td>
+                </tr>
+                <tr>
+                    <td>Селиверстов</td>
+                    <td>Игорь</td>
+                    <td>7</td>
+                    <td>01</td>
+                    <td>1997</td>
+                </tr>
+                <tr>
+                    <td>Селезнева</td>
+                    <td>Мария</td>
+                    <td>6</td>
+                    <td>05</td>
+                    <td>1999</td>
+                </tr>
+                <tr>
+                    <td>Елисеева</td>
+                    <td>Ольга</td>
+                    <td>5</td>
+                    <td>12</td>
+                    <td>1999</td>
+                </tr>
+                <tr>
+                    <td>Степанов</td>
+                    <td>Юрий</td>
+                    <td>5</td>
+                    <td>01</td>
+                    <td>2000</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

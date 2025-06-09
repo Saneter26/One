@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Билет №9 - Решение</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .answer {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .computer-components {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .component {
+            background-color: #e8f4f8;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .tech-impact {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .impact-area {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .function-table {
+            width: 100%;
+            margin: 20px 0;
+        }
+        .function-table th, .function-table td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        .function-table th {
+            background-color: #f2f2f2;
+        }
+        .graph-placeholder {
+            background-color: #eee;
+            padding: 20px;
+            text-align: center;
+            border: 1px dashed #999;
+            margin: 15px 0;
+        }
+        .formula {
+            font-family: monospace;
+            background-color: #f0f0f0;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Экзаменационный билет №9</h1>
+    <p><strong>Специальность:</strong> 09.02.07 Информационные системы и программирование</p>
+    <p><strong>Курс:</strong> 1</p>
+    <p><strong>Дисциплина:</strong> Информатика</p>
+
+    <h2>1. Устройство компьютера. Техническая реализация компьютера</h2>
+    <div class="answer">
+        <h3>Основные компоненты компьютера:</h3>
+        <div class="computer-components">
+            <div class="component">
+                <h4>1. Центральный процессор (CPU)</h4>
+                <ul>
+                    <li>Выполняет арифметические и логические операции</li>
+                    <li>Состоит из:
+                        <ul>
+                            <li>Арифметико-логического устройства (АЛУ)</li>
+                            <li>Устройства управления</li>
+                            <li>Регистров</li>
+                            <li>Кэш-памяти</li>
+                        </ul>
+                    </li>
+                    <li>Характеристики: тактовая частота, количество ядер, кэш</li>
+                </ul>
+            </div>
+            <div class="component">
+                <h4>2. Оперативная память (RAM)</h4>
+                <ul>
+                    <li>Временное хранение данных и команд</li>
+                    <li>Энергозависимая (очищается при выключении)</li>
+                    <li>Характеристики: объем, частота, тип (DDR4, DDR5)</li>
+                </ul>
+            </div>
+            <div class="component">
+                <h4>3. Материнская плата</h4>
+                <ul>
+                    <li>Объединяет все компоненты компьютера</li>
+                    <li>Содержит:
+                        <ul>
+                            <li>Сокет процессора</li>
+                            <li>Слоты памяти</li>
+                            <li>Чипсет</li>
+                            <li>Разъемы расширения (PCIe)</li>
+                            <li>Интерфейсы ввода-вывода</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="component">
+                <h4>4. Накопители данных</h4>
+                <ul>
+                    <li>Жесткие диски (HDD) - магнитные пластины</li>
+                    <li>Твердотельные накопители (SSD) - флеш-память</li>
+                    <li>Оптические диски (CD/DVD/Blu-ray)</li>
+                </ul>
+            </div>
+            <div class="component">
+                <h4>5. Видеокарта (GPU)</h4>
+                <ul>
+                    <li>Обработка графики и вычисления</li>
+                    <li>Содержит:
+                        <ul>
+                            <li>Графический процессор</li>
+                            <li>Видеопамять</li>
+                            <li>Систему охлаждения</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="component">
+                <h4>6. Блок питания</h4>
+                <ul>
+                    <li>Преобразует переменный ток в постоянный</li>
+                    <li>Обеспечивает стабильное напряжение</li>
+                    <li>Характеристики: мощность, КПД, разъемы</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Техническая реализация компьютера:</h3>
+        <p>Современные компьютеры построены по <strong>архитектуре фон Неймана</strong>, которая включает:</p>
+        <ol>
+            <li>Принцип двоичного кодирования</li>
+            <li>Принцип программного управления</li>
+            <li>Принцип однородности памяти</li>
+            <li>Принцип адресности</li>
+        </ol>
+        <p>Основные этапы работы процессора (цикл выполнения команды):</p>
+        <ol>
+            <li>Выборка команды из памяти</li>
+            <li>Декодирование команды</li>
+            <li>Выполнение команды</li>
+            <li>Запись результата</li>
+        </ol>
+    </div>
+
+    <h2>2. Роль информационных технологий в современном обществе</h2>
+    <div class="answer">
+        <h3>Основные сферы влияния ИТ:</h3>
+        <div class="tech-impact">
+            <div class="impact-area">
+                <h4>1. Экономика и бизнес</h4>
+                <ul>
+                    <li>Автоматизация бизнес-процессов</li>
+                    <li>Электронная коммерция</li>
+                    <li>CRM и ERP системы</li>
+                    <li>Цифровые платежные системы</li>
+                    <li>Блокчейн и криптовалюты</li>
+                </ul>
+            </div>
+            <div class="impact-area">
+                <h4>2. Образование</h4>
+                <ul>
+                    <li>Электронное обучение (e-learning)</li>
+                    <li>Онлайн-курсы и MOOC</li>
+                    <li>Виртуальные лаборатории</li>
+                    <li>Цифровые образовательные ресурсы</li>
+                </ul>
+            </div>
+            <div class="impact-area">
+                <h4>3. Здравоохранение</h4>
+                <ul>
+                    <li>Электронные медицинские карты</li>
+                    <li>Телемедицина</li>
+                    <li>Медицинская визуализация</li>
+                    <li>ИИ для диагностики</li>
+                </ul>
+            </div>
+            <div class="impact-area">
+                <h4>4. Государственное управление</h4>
+                <ul>
+                    <li>Электронное правительство</li>
+                    <li>Цифровые госуслуги</li>
+                    <li>Открытые данные</li>
+                    <li>Умные города</li>
+                </ul>
+            </div>
+            <div class="impact-area">
+                <h4>5. Повседневная жизнь</h4>
+                <ul>
+                    <li>Социальные сети</li>
+                    <li>Мобильные приложения</li>
+                    <li>Умные дома</li>
+                    <li>Цифровые развлечения</li>
+                </ul>
+            </div>
+            <div class="impact-area">
+                <h4>6. Наука и исследования</h4>
+                <ul>
+                    <li>Суперкомпьютеры</li>
+                    <li>Моделирование сложных процессов</li>
+                    <li>Обработка больших данных</li>
+                    <li>Искусственный интеллект</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Ключевые тенденции:</h3>
+        <ul>
+            <li><strong>Цифровая трансформация</strong> всех сфер жизни</li>
+            <li><strong>Интернет вещей (IoT)</strong> - объединение устройств</li>
+            <li><strong>Искусственный интеллект</strong> и машинное обучение</li>
+            <li><strong>Облачные технологии</strong> и edge computing</li>
+            <li><strong>5G сети</strong> и мобильные технологии</li>
+            <li><strong>Квантовые вычисления</strong> как будущее ИТ</li>
+        </ul>
+    </div>
+
+    <h2>3. Используя программу MS Excel, постройте график функции Y(x)=x + sin(x) на отрезке [0;5] с шагом 1</h2>
+    <div class="answer">
+        <h3>Таблица значений функции:</h3>
+        <table class="function-table">
+            <tr>
+                <th>x</th>
+                <th>sin(x)</th>
+                <th>Y(x) = x + sin(x)</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td class="formula">=SIN(A2)</td>
+                <td class="formula">=A2+B2</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="formula">=SIN(A3)</td>
+                <td class="formula">=A3+B3</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="formula">=SIN(A4)</td>
+                <td class="formula">=A4+B4</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="formula">=SIN(A5)</td>
+                <td class="formula">=A5+B5</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="formula">=SIN(A6)</td>
+                <td class="formula">=A6+B6</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="formula">=SIN(A7)</td>
+                <td class="formula">=A7+B7</td>
+            </tr>
+        </table>
+
+        <h3>Результаты вычислений:</h3>
+        <table class="function-table">
+            <tr>
+                <th>x</th>
+                <th>sin(x)</th>
+                <th>Y(x)</th>
+            </tr>
+            <tr><td>0</td><td>0.00</td><td>0.00</td></tr>
+            <tr><td>1</td><td>0.84</td><td>1.84</td></tr>
+            <tr><td>2</td><td>0.91</td><td>2.91</td></tr>
+            <tr><td>3</td><td>0.14</td><td>3.14</td></tr>
+            <tr><td>4</td><td>-0.76</td><td>3.24</td></tr>
+            <tr><td>5</td><td>-0.96</td><td>4.04</td></tr>
+        </table>
+
+        <h3>График функции Y(x) = x + sin(x):</h3>
+        <div class="graph-placeholder">
+            <p>[Здесь будет график функции Y(x) = x + sin(x) на интервале [0;5]]</p>
+            <p>Для построения графика в Excel:</p>
+            <ol>
+                <li>Создать таблицу значений (как показано выше)</li>
+                <li>Выделить столбцы с x и Y(x)</li>
+                <li>Выбрать "Вставка" → "Графики" → "График"</li>
+                <li>Выбрать тип "График с маркерами"</li>
+                <li>Добавить заголовок "График функции Y(x) = x + sin(x)"</li>
+                <li>Подписать оси: "x" для горизонтальной, "Y(x)" для вертикальной</li>
+                <li>Настроить сетку и легенду</li>
+            </ol>
+        </div>
+
+        <h3>Анализ функции:</h3>
+        <ul>
+            <li>Функция представляет собой сумму линейной (x) и периодической (sin(x)) функций</li>
+            <li>На интервале [0;5] функция монотонно возрастает</li>
+            <li>Амплитуда колебаний sin(x) составляет ±1</li>
+            <li>При x=π≈3.14 sin(x)≈0, поэтому Y(x)≈x</li>
+        </ul>
+    </div>
+</body>
+</html>

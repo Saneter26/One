@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Билет №8 - Решение</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .answer {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .table-container {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .memory-types {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .memory-type {
+            background-color: #e8f4f8;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .tech-components {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .tech-component {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .image-placeholder {
+            background-color: #eee;
+            padding: 20px;
+            text-align: center;
+            border: 1px dashed #999;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Экзаменационный билет №8</h1>
+    <p><strong>Специальность:</strong> 09.02.07 Информационные системы и программирование</p>
+    <p><strong>Курс:</strong> 1</p>
+    <p><strong>Дисциплина:</strong> Информатика</p>
+
+    <h2>1. Оперативная память и графический интерфейс. Накопители массивов информации (внешние запоминающие устройства).</h2>
+    <div class="answer">
+        <h3>Оперативная память (ОЗУ - оперативное запоминающее устройство):</h3>
+        <ul>
+            <li><strong>Назначение:</strong> Временное хранение данных и команд для быстрого доступа процессора</li>
+            <li><strong>Характеристики:</strong>
+                <ul>
+                    <li>Объем (4-32 ГБ и более для современных ПК)</li>
+                    <li>Тактовая частота (2400-3600 МГц и выше)</li>
+                    <li>Тип (DDR3, DDR4, DDR5)</li>
+                    <li>Задержки (тайминги)</li>
+                </ul>
+            </li>
+            <li><strong>Принцип работы:</strong> Энергозависимая память с произвольным доступом</li>
+            <li><strong>Особенности:</strong> Быстрый доступ, очищается при выключении питания</li>
+        </ul>
+
+        <h3>Графический интерфейс пользователя (GUI):</h3>
+        <ul>
+            <li><strong>Определение:</strong> Визуальный способ взаимодействия пользователя с компьютером</li>
+            <li><strong>Основные элементы:</strong>
+                <ul>
+                    <li>Окна</li>
+                    <li>Меню</li>
+                    <li>Кнопки</li>
+                    <li>Значки (иконки)</li>
+                    <li>Полосы прокрутки</li>
+                </ul>
+            </li>
+            <li><strong>Требования к памяти:</strong>
+                <ul>
+                    <li>Буфер кадра (хранит изображение для вывода на экран)</li>
+                    <li>Текстуры и ресурсы интерфейса</li>
+                    <li>Видеопамять (в GPU) и системная память</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Накопители массивов информации (внешние запоминающие устройства):</h3>
+        <div class="memory-types">
+            <div class="memory-type">
+                <h4>Жесткие диски (HDD):</h4>
+                <ul>
+                    <li>Магнитные пластины и головки</li>
+                    <li>Емкость: до 20 ТБ</li>
+                    <li>Скорость: 5400-15000 об/мин</li>
+                    <li>Преимущества: низкая стоимость за ГБ</li>
+                    <li>Недостатки: механические части, чувствительность к ударам</li>
+                </ul>
+            </div>
+            <div class="memory-type">
+                <h4>Твердотельные накопители (SSD):</h4>
+                <ul>
+                    <li>Флеш-память (NAND)</li>
+                    <li>Емкость: до 8 ТБ (потребительские)</li>
+                    <li>Скорость: в 5-10 раз быстрее HDD</li>
+                    <li>Преимущества: высокая скорость, надежность</li>
+                    <li>Недостатки: высокая стоимость, ограниченное число циклов записи</li>
+                </ul>
+            </div>
+            <div class="memory-type">
+                <h4>Оптические диски:</h4>
+                <ul>
+                    <li>CD (700 МБ), DVD (4.7-17 ГБ), Blu-ray (25-128 ГБ)</li>
+                    <li>Типы: ROM (только чтение), R (однократная запись), RW (многократная запись)</li>
+                    <li>Применение: архивация, распространение ПО и медиа</li>
+                </ul>
+            </div>
+            <div class="memory-type">
+                <h4>Флеш-накопители:</h4>
+                <ul>
+                    <li>USB-флешки, карты памяти</li>
+                    <li>Емкость: до 2 ТБ</li>
+                    <li>Преимущества: компактность, удобство</li>
+                    <li>Недостатки: ограниченный ресурс записи</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h2>2. Понятие информационных технологий. Основные компоненты информационных технологий.</h2>
+    <div class="answer">
+        <p><strong>Информационные технологии (ИТ)</strong> - это совокупность методов, процессов и средств сбора, хранения, обработки, передачи и распространения информации.</p>
+        
+        <h3>Основные компоненты информационных технологий:</h3>
+        <div class="tech-components">
+            <div class="tech-component">
+                <h4>1. Аппаратное обеспечение:</h4>
+                <ul>
+                    <li>Компьютеры и серверы</li>
+                    <li>Периферийные устройства</li>
+                    <li>Сетевые устройства</li>
+                    <li>Средства хранения данных</li>
+                </ul>
+            </div>
+            <div class="tech-component">
+                <h4>2. Программное обеспечение:</h4>
+                <ul>
+                    <li>Системное ПО (ОС, драйверы)</li>
+                    <li>Прикладное ПО (офисные пакеты, СУБД)</li>
+                    <li>Инструментальные средства (среды разработки)</li>
+                </ul>
+            </div>
+            <div class="tech-component">
+                <h4>3. Данные и информация:</h4>
+                <ul>
+                    <li>Базы данных</li>
+                    <li>Знания</li>
+                    <li>Метаданные</li>
+                </ul>
+            </div>
+            <div class="tech-component">
+                <h4>4. Сетевые технологии:</h4>
+                <ul>
+                    <li>Локальные и глобальные сети</li>
+                    <li>Протоколы передачи данных</li>
+                    <li>Облачные технологии</li>
+                </ul>
+            </div>
+            <div class="tech-component">
+                <h4>5. Человеческие ресурсы:</h4>
+                <ul>
+                    <li>Пользователи</li>
+                    <li>ИТ-специалисты</li>
+                    <li>Администраторы</li>
+                </ul>
+            </div>
+            <div class="tech-component">
+                <h4>6. Процедуры и стандарты:</h4>
+                <ul>
+                    <li>Методологии</li>
+                    <li>Регламенты</li>
+                    <li>Политики безопасности</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Современные направления ИТ:</h3>
+        <ul>
+            <li>Облачные вычисления (IaaS, PaaS, SaaS)</li>
+            <li>Большие данные (Big Data)</li>
+            <li>Искусственный интеллект и машинное обучение</li>
+            <li>Интернет вещей (IoT)</li>
+            <li>Блокчейн и распределенные реестры</li>
+            <li>Квантовые вычисления</li>
+        </ul>
+    </div>
+
+    <h2>3. Создайте электронную таблицу по образцу и постройте гистограмму</h2>
+    <div class="answer">
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Наименование автомобиля</th>
+                    <th>Длина, мм</th>
+                    <th>Ширина, мм</th>
+                    <th>Разгон до 100 км/ч, с</th>
+                    <th>Максимальная скорость, км/ч</th>
+                </tr>
+                <tr>
+                    <td>Audi</td>
+                    <td>4790</td>
+                    <td>1775</td>
+                    <td>7.2</td>
+                    <td>191</td>
+                </tr>
+                <tr>
+                    <td>Toyota</td>
+                    <td>4800</td>
+                    <td>1785</td>
+                    <td>9.8</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>Mitsubishi</td>
+                    <td>4455</td>
+                    <td>1770</td>
+                    <td>10.5</td>
+                    <td>180</td>
+                </tr>
+                <tr>
+                    <td>Mercedes-Benz</td>
+                    <td>4516</td>
+                    <td>1723</td>
+                    <td>6.1</td>
+                    <td>250</td>
+                </tr>
+            </table>
+        </div>
+
+        <h3>Гистограмма сравнения характеристик автомобилей:</h3>
+        <div class="image-placeholder">
+            <p>[Здесь будет гистограмма с 4 группами столбцов (по маркам автомобилей) и 4 рядами данных (длина, ширина, разгон, макс. скорость)]</p>
+            <p>Для создания гистограммы в Excel:</p>
+            <ol>
+                <li>Выделить диапазон данных (A1:E5)</li>
+                <li>В меню выбрать "Вставка" → "Диаграммы" → "Гистограмма"</li>
+                <li>Выбрать тип "Группированная гистограмма"</li>
+                <li>Настроить подписи осей и заголовок</li>
+                <li>Добавить название "Сравнение характеристик автомобилей"</li>
+                <li>Настроить легенду и цвета столбцов</li>
+            </ol>
+        </div>
+
+        <h3>Дополнительный анализ данных:</h3>
+        <table>
+            <tr>
+                <th>Параметр</th>
+                <th>Среднее значение</th>
+                <th>Максимальное значение</th>
+                <th>Минимальное значение</th>
+            </tr>
+            <tr>
+                <td>Длина</td>
+                <td class="formula">=AVERAGE(B2:B5)</td>
+                <td class="formula">=MAX(B2:B5)</td>
+                <td class="formula">=MIN(B2:B5)</td>
+            </tr>
+            <tr>
+                <td>Ширина</td>
+                <td class="formula">=AVERAGE(C2:C5)</td>
+                <td class="formula">=MAX(C2:C5)</td>
+                <td class="formula">=MIN(C2:C5)</td>
+            </tr>
+            <tr>
+                <td>Разгон до 100 км/ч</td>
+                <td class="formula">=AVERAGE(D2:D5)</td>
+                <td class="formula">=MAX(D2:D5)</td>
+                <td class="formula">=MIN(D2:D5)</td>
+            </tr>
+            <tr>
+                <td>Максимальная скорость</td>
+                <td class="formula">=AVERAGE(E2:E5)</td>
+                <td class="formula">=MAX(E2:E5)</td>
+                <td class="formula">=MIN(E2:E5)</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

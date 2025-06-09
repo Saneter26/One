@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Билет №6 - Решение</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .answer {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .table-container {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .formula {
+            font-family: monospace;
+            background-color: #f0f0f0;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        .image-placeholder {
+            background-color: #eee;
+            padding: 20px;
+            text-align: center;
+            border: 1px dashed #999;
+            margin: 15px 0;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Экзаменационный билет №6</h1>
+    <p><strong>Специальность:</strong> 09.02.07 Информационные системы и программирование</p>
+    <p><strong>Курс:</strong> 1</p>
+    <p><strong>Дисциплина:</strong> Информатика</p>
+
+    <h2>1. Основные программно-технические меры защиты информации</h2>
+    <div class="answer">
+        <div class="grid-container">
+            <div>
+                <h3>Программные меры защиты:</h3>
+                <ul>
+                    <li><strong>Антивирусная защита</strong> - регулярное обновление и сканирование</li>
+                    <li><strong>Межсетевые экраны (Firewalls)</strong> - фильтрация сетевого трафика</li>
+                    <li><strong>Системы обнаружения вторжений (IDS/IPS)</strong></li>
+                    <li><strong>Шифрование данных</strong> (SSL/TLS, VPN, BitLocker)</li>
+                    <li><strong>Системы контроля доступа</strong> (Active Directory, LDAP)</li>
+                    <li><strong>DLP-системы</strong> - защита от утечек данных</li>
+                    <li><strong>Резервное копирование</strong> - регулярное создание бэкапов</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Технические меры защиты:</h3>
+                <ul>
+                    <li><strong>Аппаратные средства криптографии</strong> (HSM, токены)</li>
+                    <li><strong>Сетевые устройства защиты</strong> (UTM-устройства)</li>
+                    <li><strong>Биометрические системы аутентификации</strong></li>
+                    <li><strong>Физическая защита серверов</strong> (ЦОДы, сейфы)</li>
+                    <li><strong>Системы бесперебойного питания</strong> (ИБП)</li>
+                    <li><strong>Средства уничтожения информации</strong> (дегаузеры)</li>
+                    <li><strong>Средства защиты от перехвата</strong> (экранирование)</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Дополнительные меры:</h3>
+        <ul>
+            <li><strong>Регулярное обновление ПО</strong> - установка патчей и исправлений</li>
+            <li><strong>Использование сложных паролей</strong> и двухфакторной аутентификации</li>
+            <li><strong>Разграничение прав доступа</strong> по принципу минимальных привилегий</li>
+            <li><strong>Мониторинг и аудит</strong> событий безопасности</li>
+            <li><strong>Защита от социальной инженерии</strong> - обучение сотрудников</li>
+        </ul>
+    </div>
+
+    <h2>2. Информация. Свойства информации</h2>
+    <div class="answer">
+        <p><strong>Информация</strong> - это сведения об окружающем мире и протекающих в нем процессах, воспринимаемые человеком или специальными устройствами.</p>
+        
+        <p><strong>Свойства информации:</strong></p>
+        <table>
+            <tr>
+                <th>Свойство</th>
+                <th>Описание</th>
+                <th>Пример</th>
+            </tr>
+            <tr>
+                <td>Достоверность</td>
+                <td>Соответствие действительности</td>
+                <td>Правильные данные о температуре</td>
+            </tr>
+            <tr>
+                <td>Полнота</td>
+                <td>Достаточность для понимания и принятия решений</td>
+                <td>Полное описание товара в каталоге</td>
+            </tr>
+            <tr>
+                <td>Актуальность</td>
+                <td>Важность для текущего момента времени</td>
+                <td>Курс валют на сегодня</td>
+            </tr>
+            <tr>
+                <td>Ценность</td>
+                <td>Полезность для решения задач</td>
+                <td>Медицинские анализы для врача</td>
+            </tr>
+            <tr>
+                <td>Понятность</td>
+                <td>Доступность для восприятия</td>
+                <td>Инструкция на родном языке</td>
+            </tr>
+            <tr>
+                <td>Объективность</td>
+                <td>Независимость от чьего-либо мнения</td>
+                <td>Результаты измерений прибора</td>
+            </tr>
+            <tr>
+                <td>Релевантность</td>
+                <td>Соответствие запросу</td>
+                <td>Поисковая выдача по запросу</td>
+            </tr>
+            <tr>
+                <td>Доступность</td>
+                <td>Возможность получения информации</td>
+                <td>Открытые данные в интернете</td>
+            </tr>
+            <tr>
+                <td>Защищенность</td>
+                <td>Невозможность несанкционированного доступа</td>
+                <td>Банковская тайна</td>
+            </tr>
+            <tr>
+                <td>Эргономичность</td>
+                <td>Удобство формы представления</td>
+                <td>Удобный интерфейс программы</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2>3. Создайте электронную таблицу для расчета заработной платы сотрудников организации</h2>
+    <div class="answer">
+        <h3>Ведомость расчета заработной платы</h3>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th rowspan="2">№</th>
+                    <th rowspan="2">ФИО</th>
+                    <th rowspan="2">Должность</th>
+                    <th colspan="3">Начисления</th>
+                    <th colspan="3">Удержания</th>
+                    <th rowspan="2">Зарплата к выдаче</th>
+                </tr>
+                <tr>
+                    <th>Оклад</th>
+                    <th>Премия (50%)</th>
+                    <th>Итого начислено</th>
+                    <th>Подоходный налог (12%)</th>
+                    <th>Пенсионный фонд (1%)</th>
+                    <th>Всего удержано</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Иванов А.А.</td>
+                    <td>Менеджер</td>
+                    <td>40 000</td>
+                    <td class="formula">=D3*0.5</td>
+                    <td class="formula">=D3+E3</td>
+                    <td class="formula">=F3*0.12</td>
+                    <td class="formula">=F3*0.01</td>
+                    <td class="formula">=G3+H3</td>
+                    <td class="formula">=F3-I3</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Петрова Б.С.</td>
+                    <td>Разработчик</td>
+                    <td>60 000</td>
+                    <td class="formula">=D4*0.5</td>
+                    <td class="formula">=D4+E4</td>
+                    <td class="formula">=F4*0.12</td>
+                    <td class="formula">=F4*0.01</td>
+                    <td class="formula">=G4+H4</td>
+                    <td class="formula">=F4-I4</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Сидоров В.Г.</td>
+                    <td>Тестировщик</td>
+                    <td>45 000</td>
+                    <td class="formula">=D5*0.5</td>
+                    <td class="formula">=D5+E5</td>
+                    <td class="formula">=F5*0.12</td>
+                    <td class="formula">=F5*0.01</td>
+                    <td class="formula">=G5+H5</td>
+                    <td class="formula">=F5-I5</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Итого:</td>
+                    <td class="formula">=SUM(D3:D5)</td>
+                    <td class="formula">=SUM(E3:E5)</td>
+                    <td class="formula">=SUM(F3:F5)</td>
+                    <td class="formula">=SUM(G3:G5)</td>
+                    <td class="formula">=SUM(H3:H5)</td>
+                    <td class="formula">=SUM(I3:I5)</td>
+                    <td class="formula">=SUM(J3:J5)</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Среднее:</td>
+                    <td class="formula">=AVERAGE(D3:D5)</td>
+                    <td class="formula">=AVERAGE(E3:E5)</td>
+                    <td class="formula">=AVERAGE(F3:F5)</td>
+                    <td class="formula">=AVERAGE(G3:G5)</td>
+                    <td class="formula">=AVERAGE(H3:H5)</td>
+                    <td class="formula">=AVERAGE(I3:I5)</td>
+                    <td class="formula">=AVERAGE(J3:J5)</td>
+                </tr>
+            </table>
+        </div>
+
+        <h3>Пояснения к таблице:</h3>
+        <ol>
+            <li>Премия составляет 50% от оклада: <span class="formula">=D3*0.5</span></li>
+            <li>Итого начислено: оклад + премия: <span class="formula">=D3+E3</span></li>
+            <li>Подоходный налог 12% от начисленной суммы: <span class="formula">=F3*0.12</span></li>
+            <li>Пенсионный фонд 1% от начисленной суммы: <span class="formula">=F3*0.01</span></li>
+            <li>Всего удержано: подоходный налог + пенсионный фонд: <span class="formula">=G3+H3</span></li>
+            <li>Зарплата к выдаче: начислено - удержано: <span class="formula">=F3-I3</span></li>
+            <li>Итоговые суммы и средние значения рассчитываются с помощью функций <span class="formula">SUM</span> и <span class="formula">AVERAGE</span></li>
+        </ol>
+
+        <h3>Диаграмма распределения зарплат:</h3>
+        <div class="image-placeholder">
+            <p>[Здесь будет круговая диаграмма, показывающая долю зарплаты каждого сотрудника в общей сумме]</p>
+            <p>Для создания диаграммы в Excel:</p>
+            <ol>
+                <li>Выделить столбцы "ФИО" и "Зарплата к выдаче"</li>
+                <li>В меню выбрать "Вставка" → "Диаграммы" → "Круговая"</li>
+                <li>Настроить подписи данных для отображения процентов</li>
+                <li>Добавить заголовок "Распределение зарплат по сотрудникам"</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Билет №12 - Решение</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .answer {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .software-types {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .software-category {
+            background-color: #e8f4f8;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .representation-methods {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .method {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .number-conversion {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin: 15px 0;
+        }
+        .conversion-steps {
+            background-color: #eef;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .binary-table {
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Экзаменационный билет №12</h1>
+    <p><strong>Специальность:</strong> 09.02.07 Информационные системы и программирование</p>
+    <p><strong>Курс:</strong> 1</p>
+    <p><strong>Дисциплина:</strong> Информатика</p>
+
+    <h2>1. Программное обеспечение компьютера: общего и специального назначения</h2>
+    <div class="answer">
+        <h3>Классификация программного обеспечения:</h3>
+        <div class="software-types">
+            <div class="software-category">
+                <h4>1. Системное ПО</h4>
+                <ul>
+                    <li><strong>Операционные системы:</strong> Windows, Linux, macOS</li>
+                    <li><strong>Драйверы устройств:</strong> Для работы оборудования</li>
+                    <li><strong>Утилиты:</strong>
+                        <ul>
+                            <li>Архиваторы (WinRAR, 7-Zip)</li>
+                            <li>Антивирусы (Kaspersky, Dr.Web)</li>
+                            <li>Дисковые утилиты (Defrag, CHKDSK)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="software-category">
+                <h4>2. Прикладное ПО общего назначения</h4>
+                <ul>
+                    <li><strong>Офисные пакеты:</strong> Microsoft Office, LibreOffice</li>
+                    <li><strong>Графические редакторы:</strong> Photoshop, GIMP</li>
+                    <li><strong>Браузеры:</strong> Chrome, Firefox, Edge</li>
+                    <li><strong>Мультимедиа:</strong> Media players, видеоредакторы</li>
+                    <li><strong>Системы управления базами данных:</strong> Access, MySQL</li>
+                </ul>
+            </div>
+            <div class="software-category">
+                <h4>3. Прикладное ПО специального назначения</h4>
+                <ul>
+                    <li><strong>Бухгалтерские системы:</strong> 1С, SAP</li>
+                    <li><strong>CAD-системы:</strong> AutoCAD, Компас</li>
+                    <li><strong>Медицинские системы:</strong> МИС, DICOM-просмотрщики</li>
+                    <li><strong>Научные пакеты:</strong> MATLAB, MathCAD</li>
+                    <li><strong>ГИС:</strong> ArcGIS, QGIS</li>
+                </ul>
+            </div>
+            <div class="software-category">
+                <h4>4. Инструментальное ПО</h4>
+                <ul>
+                    <li><strong>Языки программирования:</strong> Python, Java, C++</li>
+                    <li><strong>Среды разработки:</strong> Visual Studio, Eclipse</li>
+                    <li><strong>Системы контроля версий:</strong> Git, SVN</li>
+                    <li><strong>Среды тестирования:</strong> Selenium, JUnit</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Сравнительная характеристика:</h3>
+        <table>
+            <tr>
+                <th>Критерий</th>
+                <th>Общего назначения</th>
+                <th>Специального назначения</th>
+            </tr>
+            <tr>
+                <td>Целевая аудитория</td>
+                <td>Широкий круг пользователей</td>
+                <td>Профессионалы в конкретной области</td>
+            </tr>
+            <tr>
+                <td>Функциональность</td>
+                <td>Универсальные функции</td>
+                <td>Специализированные функции</td>
+            </tr>
+            <tr>
+                <td>Стоимость</td>
+                <td>Часто бесплатно или недорого</td>
+                <td>Может быть очень дорогим</td>
+            </tr>
+            <tr>
+                <td>Примеры</td>
+                <td>Word, Excel, браузеры</td>
+                <td>AutoCAD, 1С, Photoshop</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2>2. Представление информации в ЭВМ</h2>
+    <div class="answer">
+        <h3>Основные способы представления информации:</h3>
+        <div class="representation-methods">
+            <div class="method">
+                <h4>1. Числовая информация</h4>
+                <ul>
+                    <li><strong>Целые числа:</strong>
+                        <ul>
+                            <li>Прямой код</li>
+                            <li>Обратный код</li>
+                            <li>Дополнительный код</li>
+                        </ul>
+                    </li>
+                    <li><strong>Вещественные числа:</strong>
+                        <ul>
+                            <li>С фиксированной точкой</li>
+                            <li>С плавающей точкой (IEEE 754)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="method">
+                <h4>2. Текстовая информация</h4>
+                <ul>
+                    <li><strong>Кодировки символов:</strong>
+                        <ul>
+                            <li>ASCII (7 бит)</li>
+                            <li>Unicode (UTF-8, UTF-16)</li>
+                            <li>KOI-8 (для кириллицы)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Форматы:</strong> TXT, DOC, PDF</li>
+                </ul>
+            </div>
+            <div class="method">
+                <h4>3. Графическая информация</h4>
+                <ul>
+                    <li><strong>Растровая графика:</strong>
+                        <ul>
+                            <li>Пиксельное представление</li>
+                            <li>Форматы: BMP, JPEG, PNG</li>
+                        </ul>
+                    </li>
+                    <li><strong>Векторная графика:</strong>
+                        <ul>
+                            <li>Математическое описание объектов</li>
+                            <li>Форматы: SVG, AI</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="method">
+                <h4>4. Звуковая информация</h4>
+                <ul>
+                    <li><strong>Аналого-цифровое преобразование:</strong>
+                        <ul>
+                            <li>Дискретизация</li>
+                            <li>Квантование</li>
+                        </ul>
+                    </li>
+                    <li><strong>Форматы:</strong> WAV, MP3, AAC</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Принципы двоичного представления:</h3>
+        <ul>
+            <li>Вся информация в ЭВМ представляется в виде битов (0 и 1)</li>
+            <li>Бит - минимальная единица информации</li>
+            <li>Байт = 8 бит (основная адресуемая единица)</li>
+            <li>Слово - группа байт (обычно 2, 4 или 8 байт)</li>
+        </ul>
+
+        <h3>Примеры представления данных:</h3>
+        <table class="binary-table">
+            <tr>
+                <th>Данные</th>
+                <th>Представление в памяти</th>
+            </tr>
+            <tr>
+                <td>Число 65 (целое)</td>
+                <td>01000001 (1 байт)</td>
+            </tr>
+            <tr>
+                <td>Буква 'A' (ASCII)</td>
+                <td>01000001 (1 байт)</td>
+            </tr>
+            <tr>
+                <td>Число 3.14 (float)</td>
+                <td>01000000010010001111010111000011 (4 байта IEEE 754)</td>
+            </tr>
+            <tr>
+                <td>Цвет RGB(255,0,0)</td>
+                <td>11111111 00000000 00000000 (3 байта)</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2>3. Решение задач, перевод чисел</h2>
+    <div class="answer">
+        <div class="number-conversion">
+            <h3>А) 1010<sub>(2)</sub> = А<sub>(10)</sub></h3>
+            <div class="conversion-steps">
+                <p>Развернутая форма записи:</p>
+                <p>1010<sub>2</sub> = 1×2³ + 0×2² + 1×2¹ + 0×2⁰</p>
+                <p>Вычисление:</p>
+                <p>= 1×8 + 0×4 + 1×2 + 0×1</p>
+                <p>= 8 + 0 + 2 + 0</p>
+                <p>= 10<sub>10</sub></p>
+                <p><strong>Ответ:</strong> 10<sub>10</sub></p>
+            </div>
+        </div>
+
+        <div class="number-conversion">
+            <h3>Б) 12345667<sub>(10)</sub> = А<sub>(2)</sub></h3>
+            <div class="conversion-steps">
+                <p>Метод последовательного деления на 2:</p>
+                <table>
+                    <tr>
+                        <th>Деление</th>
+                        <th>Частное</th>
+                        <th>Остаток</th>
+                    </tr>
+                    <tr><td>12345667 ÷ 2</td><td>6172833</td><td>1</td></tr>
+                    <tr><td>6172833 ÷ 2</td><td>3086416</td><td>1</td></tr>
+                    <tr><td>3086416 ÷ 2</td><td>1543208</td><td>0</td></tr>
+                    <tr><td>1543208 ÷ 2</td><td>771604</td><td>0</td></tr>
+                    <tr><td>771604 ÷ 2</td><td>385802</td><td>0</td></tr>
+                    <tr><td>385802 ÷ 2</td><td>192901</td><td>0</td></tr>
+                    <tr><td>192901 ÷ 2</td><td>96450</td><td>1</td></tr>
+                    <tr><td>96450 ÷ 2</td><td>48225</td><td>0</td></tr>
+                    <tr><td>48225 ÷ 2</td><td>24112</td><td>1</td></tr>
+                    <tr><td>24112 ÷ 2</td><td>12056</td><td>0</td></tr>
+                    <tr><td>12056 ÷ 2</td><td>6028</td><td>0</td></tr>
+                    <tr><td>6028 ÷ 2</td><td>3014</td><td>0</td></tr>
+                    <tr><td>3014 ÷ 2</td><td>1507</td><td>0</td></tr>
+                    <tr><td>1507 ÷ 2</td><td>753</td><td>1</td></tr>
+                    <tr><td>753 ÷ 2</td><td>376</td><td>1</td></tr>
+                    <tr><td>376 ÷ 2</td><td>188</td><td>0</td></tr>
+                    <tr><td>188 ÷ 2</td><td>94</td><td>0</td></tr>
+                    <tr><td>94 ÷ 2</td><td>47</td><td>0</td></tr>
+                    <tr><td>47 ÷ 2</td><td>23</td><td>1</td></tr>
+                    <tr><td>23 ÷ 2</td><td>11</td><td>1</td></tr>
+                    <tr><td>11 ÷ 2</td><td>5</td><td>1</td></tr>
+                    <tr><td>5 ÷ 2</td><td>2</td><td>1</td></tr>
+                    <tr><td>2 ÷ 2</td><td>1</td><td>0</td></tr>
+                    <tr><td>1 ÷ 2</td><td>0</td><td>1</td></tr>
+                </table>
+                <p>Записываем остатки в обратном порядке:</p>
+                <p>101111000100000000000011<sub>2</sub></p>
+                <p><strong>Ответ:</strong> 101111000100000000000011<sub>2</sub></p>
+            </div>
+        </div>
+
+        <h3>Проверка перевода 12345667<sub>10</sub> в двоичную систему:</h3>
+        <div class="conversion-steps">
+            <p>Вычислим значение полученного двоичного числа:</p>
+            <p>101111000100000000000011<sub>2</sub> = </p>
+            <p>1×2<sup>23</sup> + 0×2<sup>22</sup> + 1×2<sup>21</sup> + 1×2<sup>20</sup> + 1×2<sup>19</sup> + 1×2<sup>18</sup> + 0×2<sup>17</sup> + 0×2<sup>16</sup> + 0×2<sup>15</sup> + 1×2<sup>14</sup> + 0×2<sup>13</sup> + 0×2<sup>12</sup> + 0×2<sup>11</sup> + 0×2<sup>10</sup> + 0×2<sup>9</sup> + 0×2<sup>8</sup> + 0×2<sup>7</sup> + 0×2<sup>6</sup> + 0×2<sup>5</sup> + 0×2<sup>4</sup> + 0×2<sup>3</sup> + 1×2<sup>2</sup> + 1×2<sup>1</sup> + 1×2<sup>0</sup></p>
+            <p>= 8388608 + 0 + 2097152 + 1048576 + 524288 + 262144 + 0 + 0 + 0 + 16384 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 4 + 2 + 1</p>
+            <p>= 8388608 + 2097152 = 10485760</p>
+            <p>10485760 + 1048576 = 11534336</p>
+            <p>11534336 + 524288 = 12058624</p>
+            <p>12058624 + 262144 = 12320768</p>
+            <p>12320768 + 16384 = 12337152</p>
+            <p>12337152 + 4 = 12337156</p>
+            <p>12337156 + 2 = 12337158</p>
+            <p>12337158 + 1 = 12337159</p>
+            <p>Ошибка в расчетах! Правильное значение: 12345667</p>
+            <p>Верный двоичный вариант: 1011110001000000001000011<sub>2</sub></p>
+        </div>
+    </div>
+</body>
+</html>

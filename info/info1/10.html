@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Билет №10 - Решение</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .answer {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .file-system {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .fs-feature {
+            background-color: #e8f4f8;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .storage-methods {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .method {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .formula {
+            font-family: monospace;
+            font-size: 1.1em;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .formula-var {
+            font-style: italic;
+        }
+        .formula-sub {
+            vertical-align: sub;
+            font-size: 0.8em;
+        }
+        .formula-frac {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .formula-num {
+            border-bottom: 1px solid #000;
+            display: block;
+        }
+        .formula-denom {
+            display: block;
+        }
+        .text-sample {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin: 15px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Экзаменационный билет №10</h1>
+    <p><strong>Специальность:</strong> 09.02.07 Информационные системы и программирование</p>
+    <p><strong>Курс:</strong> 1</p>
+    <p><strong>Дисциплина:</strong> Информатика</p>
+
+    <h2>1. Файлы и файловая система. Принцип организации файловой системы операционной системы Windows</h2>
+    <div class="answer">
+        <h3>Файлы и их характеристики:</h3>
+        <ul>
+            <li><strong>Файл</strong> - именованная область данных на носителе информации</li>
+            <li><strong>Атрибуты файла:</strong>
+                <ul>
+                    <li>Имя (до 255 символов в Windows)</li>
+                    <li>Расширение (3-4 символа, указывает на тип файла)</li>
+                    <li>Размер (в байтах)</li>
+                    <li>Дата создания/изменения</li>
+                    <li>Атрибуты (только чтение, скрытый, системный)</li>
+                </ul>
+            </li>
+            <li><strong>Типы файлов:</strong>
+                <ul>
+                    <li>Исполняемые (.exe, .bat)</li>
+                    <li>Документы (.docx, .pdf)</li>
+                    <li>Мультимедиа (.mp3, .mp4)</li>
+                    <li>Архивы (.zip, .rar)</li>
+                    <li>Системные (.dll, .sys)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Файловая система:</h3>
+        <div class="file-system">
+            <div class="fs-feature">
+                <h4>Основные функции:</h4>
+                <ul>
+                    <li>Организация хранения файлов</li>
+                    <li>Управление свободным пространством</li>
+                    <li>Защита и разграничение доступа</li>
+                    <li>Обеспечение целостности данных</li>
+                    <li>Ведение метаданных</li>
+                </ul>
+            </div>
+            <div class="fs-feature">
+                <h4>Типы файловых систем:</h4>
+                <ul>
+                    <li>FAT32 (для флешек, ограничение 4ГБ на файл)</li>
+                    <li>NTFS (основная для Windows, поддержка прав доступа)</li>
+                    <li>exFAT (для внешних накопителей)</li>
+                    <li>ReFS (новейшая от Microsoft для серверов)</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Принцип организации файловой системы Windows:</h3>
+        <ol>
+            <li><strong>Иерархическая структура:</strong> Древовидная организация с каталогами и подкаталогами</li>
+            <li><strong>Логические диски:</strong> Разделение на тома (C:, D: и т.д.)</li>
+            <li><strong>Метаданные:</strong>
+                <ul>
+                    <li>Таблица MFT (Master File Table) в NTFS</li>
+                    <li>Записи о местоположении файлов</li>
+                    <li>Атрибуты и права доступа</li>
+                </ul>
+            </li>
+            <li><strong>Кластеры:</strong> Минимальный размер выделяемого пространства (обычно 4КБ)</li>
+            <li><strong>Журналирование:</strong> Запись изменений в журнал для восстановления</li>
+            <li><strong>Специальные папки:</strong>
+                <ul>
+                    <li>Пользовательские (Documents, Pictures)</li>
+                    <li>Системные (Windows, Program Files)</li>
+                    <li>Скрытые (AppData, System Volume Information)</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3>Пример структуры каталогов Windows:</h3>
+        <pre>
+C:\
+├── Windows/       (системные файлы)
+├── Program Files/ (установленные программы)
+├── Users/         (профили пользователей)
+│   ├── User1/
+│   │   ├── Documents/
+│   │   ├── Downloads/
+│   │   └── AppData/ (скрытые данные приложений)
+├── PerfLogs/      (логи производительности)
+└── pagefile.sys   (файл подкачки)
+        </pre>
+    </div>
+
+    <h2>2. Способы хранения информации в компьютере</h2>
+    <div class="answer">
+        <div class="storage-methods">
+            <div class="method">
+                <h4>1. По типу доступа:</h4>
+                <ul>
+                    <li><strong>Оперативная память (RAM):</strong>
+                        <ul>
+                            <li>Быстрый произвольный доступ</li>
+                            <li>Энергозависимая</li>
+                            <li>Используется для временных данных</li>
+                        </ul>
+                    </li>
+                    <li><strong>Постоянная память (ROM):</strong>
+                        <ul>
+                            <li>Только для чтения (в классическом варианте)</li>
+                            <li>Энергонезависимая</li>
+                            <li>Хранит BIOS, микропрограммы</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="method">
+                <h4>2. По технологии хранения:</h4>
+                <ul>
+                    <li><strong>Магнитное хранение:</strong>
+                        <ul>
+                            <li>Жесткие диски (HDD)</li>
+                            <li>Магнитные ленты</li>
+                            <li>Принцип: намагниченные области</li>
+                        </ul>
+                    </li>
+                    <li><strong>Полупроводниковое:</strong>
+                        <ul>
+                            <li>SSD, флеш-память</li>
+                            <li>Ячейки NAND-памяти</li>
+                            <li>Быстрее HDD, но ограниченный ресурс записи</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="method">
+                <h4>3. По назначению:</h4>
+                <ul>
+                    <li><strong>Кэш-память:</strong>
+                        <ul>
+                            <li>Сверхбыстрая память малого объема</li>
+                            <li>Уровни L1, L2, L3 в процессоре</li>
+                        </ul>
+                    </li>
+                    <li><strong>Видеопамять:</strong>
+                        <ul>
+                            <li>GDDR в видеокартах</li>
+                            <li>Для хранения текстур и буферов</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="method">
+                <h4>4. По организации данных:</h4>
+                <ul>
+                    <li><strong>Файловое хранение:</strong>
+                        <ul>
+                            <li>Файлы в файловой системе</li>
+                            <li>Организованы в каталоги</li>
+                        </ul>
+                    </li>
+                    <li><strong>Блочное хранение:</strong>
+                        <ul>
+                            <li>RAW-устройства (без ФС)</li>
+                            <li>Используется СУБД</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Иерархия памяти компьютера:</h3>
+        <table>
+            <tr>
+                <th>Уровень</th>
+                <th>Тип памяти</th>
+                <th>Объем</th>
+                <th>Время доступа</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Регистры процессора</td>
+                <td>несколько сотен байт</td>
+                <td>1 нс</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Кэш L1</td>
+                <td>32-64 КБ</td>
+                <td>2-5 нс</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Кэш L2</td>
+                <td>256 КБ - 2 МБ</td>
+                <td>5-10 нс</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Кэш L3</td>
+                <td>4-32 МБ</td>
+                <td>10-20 нс</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>ОЗУ (RAM)</td>
+                <td>4-32 ГБ</td>
+                <td>50-100 нс</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>SSD</td>
+                <td>128 ГБ - 2 ТБ</td>
+                <td>50-150 мкс</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>HDD</td>
+                <td>500 ГБ - 10 ТБ</td>
+                <td>5-20 мс</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2>3. Создайте текст в текстовом редакторе по образцу</h2>
+    <div class="answer">
+        <div class="text-sample">
+            <h3>Потребная эффективная мощность <span class="formula-var">N</span> токарного станка</h3>
+            
+            <div class="formula">
+                <span class="formula-var">N</span> = 
+                <div class="formula-frac">
+                    <span class="formula-num"><span class="formula-var">P</span><span class="formula-sub">2</span> · <span class="formula-var">V</span></span>
+                    <span class="formula-denom">60 · 102 · <span class="formula-var">η</span></span>
+                </div>
+            </div>
+            
+            <p>где <span class="formula-var">P</span><span class="formula-sub">2</span> - сила резания, кг, <span class="formula-var">P</span><span class="formula-sub">2</span> = 220 кг;</p>
+            <p><span class="formula-var">V</span> - скорость резания, м/мин, <span class="formula-var">V</span> = 92 м/мин;</p>
+            <p><span class="formula-var">η</span> - КПД станка, <span class="formula-var">η</span> = 0,9;</p>
+            
+            <div style="text-align: center; margin: 15px 0;">
+                <span style="border: 1px solid #000; padding: 5px 10px;">(1)</span>
+            </div>
+            
+            <h4>Инструкция для создания в текстовом редакторе:</h4>
+            <ol>
+                <li>В Microsoft Word перейдите на вкладку "Вставка"</li>
+                <li>Выберите "Формула" → "Вставить новую формулу"</li>
+                <li>Для дробей используйте шаблон "Дробь"</li>
+                <li>Для нижних индексов (P<sub>2</sub>) используйте сочетание Ctrl+= или кнопку "Индекс"</li>
+                <li>Греческие буквы (η) вставляются из панели "Символы"</li>
+                <li>Номер формулы оформляется в рамке с помощью границы абзаца</li>
+            </ol>
+            
+            <h4>Пример расчета:</h4>
+            <div class="formula">
+                <span class="formula-var">N</span> = 
+                <div class="formula-frac">
+                    <span class="formula-num">220 · 92</span>
+                    <span class="formula-denom">60 · 102 · 0,9</span>
+                </div>
+                = 
+                <div class="formula-frac">
+                    <span class="formula-num">20240</span>
+                    <span class="formula-denom">5508</span>
+                </div>
+                ≈ 3,67 кВт
+            </div>
+        </div>
+    </div>
+</body>
+</html>
