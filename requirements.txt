@@ -1,0 +1,6 @@
+PySide6==6.9.1
+PySide6_Addons==6.9.1
+PySide6_Essentials==6.9.1
+pyqt5-tools==5.15.9
+nuitka==2.7.6
+nuitka-plugin-pyside6==1.1.0
