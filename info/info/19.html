@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Билет №19 по информатике</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+        .section {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        ol {
+            list-style-type: decimal;
+            margin-left: 20px;
+        }
+        pre {
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .code-example {
+            border: 1px dashed #ccc;
+            padding: 15px;
+            margin-top: 10px;
+            background-color: #f9f9f9;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+        .radio-group label {
+            margin-right: 15px;
+        }
+        .checkbox-group label {
+            margin-right: 15px;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+        .note {
+            background-color: #e6f7ff;
+            border-left: 5px solid #2196F3;
+            padding: 10px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Билет №19 по информатике</h1>
+
+    <div class="section">
+        <h2>Вопрос 1: Кодирование графической информации. Растровая и векторная графика. Средства и технологии работы с графикой. Создание и редактирование графических информационных объектов средствами графических редакторов, систем презентационной и анимационной графики. Форматы графических файлов. Способы сжатия.</h2>
+
+        <h3>1.1. Кодирование графической информации</h3>
+        <p>Кодирование графической информации — это процесс преобразования визуальной информации в цифровой формат, пригодный для хранения, обработки и передачи компьютером. Основные подходы к кодированию графики — растровый и векторный.</p>
+
+        <h3>1.2. Растровая графика</h3>
+        <ul>
+            <li><strong>Принцип:</strong> Изображение формируется из множества маленьких точек (пикселей), расположенных по сетке (растру). Каждый пиксель имеет свой цвет.</li>
+            <li><strong>Характеристики:</strong>
+                <ul>
+                    <li><strong>Разрешение:</strong> Количество пикселей на единицу длины (например, dpi - точек на дюйм). Чем выше разрешение, тем более детальное и качественное изображение, но и больше объем файла.</li>
+                    <li><strong>Глубина цвета (цветовая палитра):</strong> Количество бит, используемое для кодирования цвета одного пикселя. Определяет количество возможных цветов. Например, 1 бит – 2 цвета (черно-белый), 8 бит – 256 цветов, 24 бита (True Color) – около 16.7 млн цветов.</li>
+                </ul>
+            </li>
+            <li><strong>Преимущества:</strong>
+                <ul>
+                    <li>Реалистичность: отлично подходит для фотографий и сложных изображений с плавными переходами цвета.</li>
+                    <li>Простота обработки: легко редактировать отдельные пиксели.</li>
+                </ul>
+            </li>
+            <li><strong>Недостатки:</strong>
+                <ul>
+                    <li>При масштабировании (увеличении) теряется качество (пикселизация).</li>
+                    <li>Большой объем файлов, особенно при высоком разрешении и большой глубине цвета.</li>
+                </ul>
+            </li>
+            <li><strong>Примеры:</strong> Фотографии, сканированные изображения.</li>
+        </ul>
+
+        <h3>1.3. Векторная графика</h3>
+        <ul>
+            <li><strong>Принцип:</strong> Изображение формируется из математических описаний геометрических объектов (линий, кривых, многоугольников, окружностей). Эти объекты называются примитивами.</li>
+            <li><strong>Характеристики:</strong>
+                <ul>
+                    <li>Описываются формулами: например, линия задается координатами начальной и конечной точек, толщиной и цветом.</li>
+                    <li>Не зависит от разрешения: при масштабировании качество изображения не теряется, так как объекты перерисовываются по новым математическим описаниям.</li>
+                </ul>
+            </li>
+            <li><strong>Преимущества:</strong>
+                <ul>
+                    <li>Отличное качество при любом масштабировании.</li>
+                    <li>Малый объем файлов, особенно для простых изображений.</li>
+                    <li>Идеально для логотипов, чертежей, схем, иллюстраций, шрифтов.</li>
+                </ul>
+            </li>
+            <li><strong>Недостатки:</strong>
+                <ul>
+                    <li>Сложность создания реалистичных изображений (фотографий).</li>
+                    <li>Более сложная обработка некоторых элементов.</li>
+                </ul>
+            </li>
+            <li><strong>Примеры:</strong> Логотипы, иконки, схемы, шрифты.</li>
+        </ul>
+
+        <h3>1.4. Средства и технологии работы с графикой</h3>
+        <ul>
+            <li><strong>Графические редакторы:</strong>
+                <ul>
+                    <li><strong>Растровые:</strong> Adobe Photoshop, GIMP, Paint.NET. Используются для редактирования фотографий, ретуши, создания коллажей.</li>
+                    <li><strong>Векторные:</strong> Adobe Illustrator, CorelDRAW, Inkscape. Используются для создания логотипов, иллюстраций, макетов для печати.</li>
+                </ul>
+            </li>
+            <li><strong>Системы презентационной графики:</strong> Microsoft PowerPoint, Google Slides, Keynote. Позволяют включать графику в презентации, применять анимацию.</li>
+            <li><strong>Системы анимационной графики:</strong> Adobe Animate, Blender, Cinema 4D. Используются для создания 2D/3D анимации, спецэффектов.</li>
+        </ul>
+
+        <h3>1.5. Форматы графических файлов</h3>
+        <ul>
+            <li><strong>Растровые форматы:</strong>
+                <ul>
+                    <li><strong>JPEG (JPG):</strong> Сжатие с потерями. Идеален для фотографий, где небольшие потери качества незаметны, но файл значительно уменьшается.</li>
+                    <li><strong>PNG:</strong> Сжатие без потерь. Поддерживает прозрачность. Хорош для веб-графики, логотипов, иконок.</li>
+                    <li><strong>GIF:</strong> Сжатие без потерь. Поддерживает анимацию и прозрачность (один цвет). Ограничен 256 цветами.</li>
+                    <li><strong>BMP:</strong> Без сжатия или с простым сжатием. Большой объем файла, используется редко.</li>
+                    <li><strong>TIFF:</strong> Без сжатия или с сжатием без потерь. Часто используется для печати и в полиграфии.</li>
+                </ul>
+            </li>
+            <li><strong>Векторные форматы:</strong>
+                <ul>
+                    <li><strong>SVG:</strong> Масштабируемая векторная графика. Открытый стандарт, основанный на XML. Идеален для веб.</li>
+                    <li><strong>AI:</strong> Формат Adobe Illustrator.</li>
+                    <li><strong>CDR:</strong> Формат CorelDRAW.</li>
+                    <li><strong>EPS:</strong> Encapsulated PostScript. Используется для обмена графикой между программами.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>1.6. Способы сжатия графики</h3>
+        <ul>
+            <li><strong>Сжатие без потерь (Lossless Compression):</strong>
+                <ul>
+                    <li>Позволяет полностью восстановить исходное изображение после распаковки.</li>
+                    <li>Удаляет избыточную информацию, не влияющую на качество.</li>
+                    <li>Примеры алгоритмов: RLE (Run-Length Encoding), LZW (алгоритм Лемпеля-Зива-Велча, используется в GIF, TIFF, PNG).</li>
+                </ul>
+            </li>
+            <li><strong>Сжатие с потерями (Lossy Compression):</strong>
+                <ul>
+                    <li>Удаляет часть информации, которая считается наименее заметной для человеческого глаза.</li>
+                    <li>Восстановление исходного изображения невозможно, но объем файла значительно уменьшается.</li>
+                    <li>Примеры алгоритмов: DCT (Discrete Cosine Transform, используется в JPEG).</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Вопрос 2: Создать две взаимосвязанные web-страницы на заданную тему, содержащие текст, графику, гиперссылки и простые элементы управления (кнопки, переключатели, списки).</h2>
+        <p>Давайте представим, что тема - "Мои любимые животные".</p>
+
+        <h3>2.1. Структура проекта</h3>
+        <p>Для этого нам понадобятся два файла: <code>index.html</code> (главная страница) и <code>cat.html</code> (страница о кошке). Также нам понадобится изображение кошки, например, <code>cat.jpg</code>, которое будет находиться в той же папке, что и HTML-файлы.</p>
+
+        <h3>2.2. Код для <code>index.html</code> (Главная страница)</h3>
+        <div class="code-example">
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ru"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Мои любимые животные - Главная&lt;/title&gt;
+    &lt;style&gt;
+        body { font-family: sans-serif; margin: 20px; }
+        nav a { margin-right: 15px; text-decoration: none; color: #007bff; }
+        nav a:hover { text-decoration: underline; }
+        .controls { margin-top: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 5px; }
+        .button-style {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button-style:hover {
+            background-color: #45a049;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;h1&gt;Добро пожаловать в мир моих любимых животных!&lt;/h1&gt;
+
+    &lt;nav&gt;
+        &lt;a href="index.html"&gt;Главная&lt;/a&gt;
+        &lt;a href="cat.html"&gt;Моя кошка&lt;/a&gt;
+    &lt;/nav&gt;
+
+    &lt;p&gt;Здесь вы найдете информацию о некоторых из моих самых любимых питомцев и других животных.&lt;/p&gt;
+
+    &lt;h2&gt;Выберите животное:&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="cat.html"&gt;Кошка&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;Собака (информация скоро появится!)&lt;/li&gt;
+        &lt;li&gt;Птица (информация скоро появится!)&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class="controls"&gt;
+        &lt;h3&gt;Опрос: Какое животное вам нравится больше?&lt;/h3&gt;
+        &lt;form&gt;
+            &lt;div class="radio-group"&gt;
+                &lt;input type="radio" id="cat_radio" name="animal_pref" value="cat"&gt;
+                &lt;label for="cat_radio"&gt;Кошки&lt;/label&gt;&lt;br&gt;
+                &lt;input type="radio" id="dog_radio" name="animal_pref" value="dog"&gt;
+                &lt;label for="dog_radio"&gt;Собаки&lt;/label&gt;&lt;br&gt;
+                &lt;input type="radio" id="other_radio" name="animal_pref" value="other"&gt;
+                &lt;label for="other_radio"&gt;Другое&lt;/label&gt;&lt;br&gt;
+            &lt;/div&gt;
+            &lt;br&gt;
+            &lt;h3&gt;Что вы хотите узнать о животных?&lt;/h3&gt;
+            &lt;div class="checkbox-group"&gt;
+                &lt;input type="checkbox" id="facts" name="info_type" value="facts"&gt;
+                &lt;label for="facts"&gt;Интересные факты&lt;/label&gt;&lt;br&gt;
+                &lt;input type="checkbox" id="care" name="info_type" value="care"&gt;
+                &lt;label for="care"&gt;Особенности ухода&lt;/label&gt;&lt;br&gt;
+                &lt;input type="checkbox" id="breeds" name="info_type" value="breeds"&gt;
+                &lt;label for="breeds"&gt;Породы&lt;/label&gt;&lt;br&gt;
+            &lt;/div&gt;
+            &lt;br&gt;
+            &lt;label for="feedback"&gt;Ваши комментарии:&lt;/label&gt;&lt;br&gt;
+            &lt;textarea id="feedback" name="feedback" rows="4" cols="50"&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;
+            &lt;button type="submit" class="button-style"&gt;Отправить&lt;/button&gt;
+            &lt;button type="reset" class="button-style"&gt;Сбросить&lt;/button&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+        </div>
+
+        <h3>2.3. Код для <code>cat.html</code> (Страница о кошке)</h3>
+        <div class="code-example">
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ru"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Мои любимые животные - Кошка&lt;/title&gt;
+    &lt;style&gt;
+        body { font-family: sans-serif; margin: 20px; }
+        nav a { margin-right: 15px; text-decoration: none; color: #007bff; }
+        nav a:hover { text-decoration: underline; }
+        img { max-width: 100%; height: auto; display: block; margin-top: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;h1&gt;Моя любимая кошка&lt;/h1&gt;
+
+    &lt;nav&gt;
+        &lt;a href="index.html"&gt;Главная&lt;/a&gt;
+        &lt;a href="cat.html"&gt;Моя кошка&lt;/a&gt;
+    &lt;/nav&gt;
+
+    &lt;p&gt;Кошки - удивительные и грациозные существа. Они являются одними из самых популярных домашних животных в мире.&lt;/p&gt;
+
+    &lt;h2&gt;Интересные факты о кошках:&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Кошки могут издавать более 100 различных звуков, тогда как собаки всего около 10.&lt;/li&gt;
+        &lt;li&gt;У кошек 32 мышцы в каждом ухе.&lt;/li&gt;
+        &lt;li&gt;Кошки спят до 70% своей жизни.&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;img src="cat.jpg" alt="Красивая кошка" width="400"&gt;
+
+    &lt;p&gt;Это моя замечательная кошка по кличке Мурка. Она очень игривая и ласковая.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href="index.html"&gt;Вернуться на главную&lt;/a&gt;&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+        </div>
+        <div class="note">
+            <p><strong>Примечание:</strong> Для корректного отображения этих страниц, сохраните файлы <code>index.html</code> и <code>cat.html</code> в одной папке, а также поместите изображение кошки (например, <code>cat.jpg</code>) в ту же папку.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Вопрос 3: Рассчитать, какое количество страниц текста можно сохранить на дискете в виде архива при заданных размерах страницы, кодовой таблице и коэффициенте сжатия.</h2>
+
+        <h3>3.1. Условия задачи (примерные)</h3>
+        <ul>
+            <li>Размер дискеты: 1.44 МБ (стандартный размер)</li>
+            <li>Размер страницы текста: 50 строк по 80 символов.</li>
+            <li>Кодовая таблица: KOI8-R (1 символ = 1 байт).</li>
+            <li>Коэффициент сжатия: 3:1 (например, файл уменьшается в 3 раза).</li>
+        </ul>
+
+        <h3>3.2. Расчет</h3>
+        <ol>
+            <li><strong>Объем одной страницы текста:</strong>
+                <ul>
+                    <li>Количество символов на странице: 50 строк * 80 символов/строка = 4000 символов.</li>
+                    <li>Объем одной страницы в байтах: 4000 символов * 1 байт/символ = 4000 байт.</li>
+                </ul>
+            </li>
+            <li><strong>Объем дискеты в байтах:</strong>
+                <ul>
+                    <li>1.44 МБ = 1.44 * 1024 КБ = 1.44 * 1024 * 1024 байт ≈ 1 509 949 байт.</li>
+                </ul>
+            </li>
+            <li><strong>Объем текста, который можно хранить на дискете без сжатия:</strong>
+                <ul>
+                    <li>Количество страниц = Объем дискеты / Объем одной страницы</li>
+                    <li>Количество страниц = 1 509 949 байт / 4000 байт/страница ≈ 377.49 страниц.</li>
+                    <li>Таким образом, без сжатия можно сохранить примерно 377 страниц.</li>
+                </ul>
+            </li>
+            <li><strong>Объем текста, который можно хранить на дискете с учетом сжатия:</strong>
+                <ul>
+                    <li>Поскольку коэффициент сжатия 3:1, это означает, что объем текста после сжатия уменьшается в 3 раза. Значит, на дискете можно хранить в 3 раза больше несжатого текста.</li>
+                    <li>Количество страниц с учетом сжатия = Количество страниц без сжатия * Коэффициент сжатия</li>
+                    <li>Количество страниц с учетом сжатия = 377.49 * 3 ≈ 1132.47 страниц.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3>3.3. Ответ</h3>
+        <p class="highlight">На дискете объемом 1.44 МБ можно сохранить приблизительно <strong>1132 страницы</strong> текста при заданных условиях (размер страницы, кодовая таблица и коэффициент сжатия).</p>
+    </div>
+
+</body>
+</html>

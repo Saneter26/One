@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экзаменационный Билет № 21 - Практическое Задание</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        .ticket-info {
+            background-color: #f0f8ff;
+            border-left: 5px solid #0056b3;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+        }
+        .task-description {
+            margin-bottom: 15px;
+        }
+        .flowchart-analysis {
+            border: 1px solid #ddd;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        .flowchart-analysis h3 {
+            color: #004085;
+        }
+        .flowchart-step {
+            margin-bottom: 10px;
+        }
+        .output {
+            font-weight: bold;
+            color: #28a745;
+        }
+        pre {
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ticket-info">
+        <h1>ЭКЗАМЕНАЦИОННЫЙ БИЛЕТ № 21</h1>
+        [span_4](start_span)<p><strong>Специальность:</strong> 09.02.07 Информационные системы и программирование[span_4](end_span)</p>
+        [span_5](start_span)<p><strong>Курс:</strong> 1[span_5](end_span)</p>
+        [span_6](start_span)<p><strong>Дисциплина:</strong> Информатика[span_6](end_span)</p>
+    </div>
+
+    [span_7](start_span)<h2>Практическое задание: Анализ алгоритма[span_7](end_span)</h2>
+
+    <div class="task-description">
+        <p><strong>Задание 3:</strong> Определить результаты выходных данных данного алгоритма.</p>
+        <p>
+            <img src="https://i.imgur.com/example_flowchart.png" alt="Блок-схема алгоритма" style="max-width:300px; display: block; margin-top: 10px;">
+            (Обратите внимание: изображение блок-схемы не может быть отображено напрямую, но будет описано ниже.)
+        </p>
+    </div>
+
+    <div class="flowchart-analysis">
+        <h3>Анализ блок-схемы</h3>
+        [span_8](start_span)<p>Представленная блок-схема описывает алгоритм, который принимает на вход число $x$[span_8](end_span). [span_9](start_span)Далее алгоритм проверяет условие: $x > 0$[span_9](end_span).</p>
+        <ul>
+            [span_10](start_span)<li class="flowchart-step">Если условие $x > 0$ истинно ("да"), то переменная $y$ вычисляется как $y = 2 \cdot x$[span_10](end_span).</li>
+            [span_11](start_span)<li class="flowchart-step">Если условие $x > 0$ ложно ("нет"), то переменная $y$ вычисляется как $y = -2 \cdot x$[span_11](end_span).</li>
+            [span_12](start_span)<li class="flowchart-step">После вычисления $y$, значение $y$ выводится на экран[span_12](end_span).</li>
+        </ul>
+
+        <h3>Определение выходных данных</h3>
+        [span_13](start_span)<p>Поскольку конкретные входные данные $x$ не указаны в задании "Определить результаты выходных данных данного алгоритма"[span_13](end_span), мы проанализируем алгоритм для нескольких примеров:</p>
+
+        <h4>Пример 1: $x = 5$</h4>
+        <ul>
+            [span_14](start_span)<li>Ввод $x = 5$[span_14](end_span).</li>
+            [span_15](start_span)<li>Проверка условия: $x > 0$ ($5 > 0$) - Истина ("да")[span_15](end_span).</li>
+            [span_16](start_span)<li>Вычисление $y$: $y = 2 \cdot 5 = 10$[span_16](end_span).</li>
+            [span_17](start_span)<li>Вывод $y$: <span class="output">10</span>[span_17](end_span).</li>
+        </ul>
+
+        <h4>Пример 2: $x = -3$</h4>
+        <ul>
+            [span_18](start_span)<li>Ввод $x = -3$[span_18](end_span).</li>
+            [span_19](start_span)<li>Проверка условия: $x > 0$ ($-3 > 0$) - Ложь ("нет")[span_19](end_span).</li>
+            [span_20](start_span)<li>Вычисление $y$: $y = -2 \cdot (-3) = 6$[span_20](end_span).</li>
+            [span_21](start_span)<li>Вывод $y$: <span class="output">6</span>[span_21](end_span).</li>
+        </ul>
+
+        <h4>Пример 3: $x = 0$</h4>
+        <ul>
+            [span_22](start_span)<li>Ввод $x = 0$[span_22](end_span).</li>
+            [span_23](start_span)<li>Проверка условия: $x > 0$ ($0 > 0$) - Ложь ("нет")[span_23](end_span).</li>
+            [span_24](start_span)<li>Вычисление $y$: $y = -2 \cdot 0 = 0$[span_24](end_span).</li>
+            [span_25](start_span)<li>Вывод $y$: <span class="output">0</span>[span_25](end_span).</li>
+        </ul>
+
+        <h3>Общий вывод алгоритма</h3>
+        <p>Данный алгоритм по сути вычисляет абсолютное значение $x$ и умножает его на 2. Формально, это можно записать как $y = 2 \cdot |x|$.</p>
+    </div>
+
+</body>
+</html>
